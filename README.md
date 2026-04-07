@@ -10,7 +10,7 @@ A classic Snake game built with Python `turtle`, now extended with game states, 
 ## Run the game
 
 ```bash
-python /home/runner/work/Python-Snake_Game/Python-Snake_Game/main.py
+python main.py
 ```
 
 ## Controls
@@ -49,7 +49,7 @@ python /home/runner/work/Python-Snake_Game/Python-Snake_Game/main.py
 ## Test
 
 ```bash
-python -m unittest discover -v /home/runner/work/Python-Snake_Game/Python-Snake_Game
+python -m unittest discover -v
 ```
 
 ## Project files

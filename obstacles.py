@@ -17,9 +17,8 @@ class ObstacleManager:
     def _blocked_keys(self, blocked_positions):
         return {(snap_to_grid(int(x)), snap_to_grid(int(y))) for x, y in blocked_positions}
 
-    def _spawn_obstacle(self, blocked_positions):
+    def _spawn_obstacle(self, blocked):
         min_x, max_x, min_y, max_y = playable_bounds()
-        blocked = self._blocked_keys(blocked_positions)
         for _ in range(200):
             x = snap_to_grid(random.randint(int(min_x), int(max_x)))
             y = snap_to_grid(random.randint(int(min_y), int(max_y)))
@@ -31,10 +30,11 @@ class ObstacleManager:
             obstacle.color("gray")
             obstacle.goto(x, y)
             self.obstacles.append(obstacle)
+            blocked.add(key)
             return
 
     def refresh_for_score(self, score, blocked_positions):
         target_count = min(MAX_OBSTACLES, score // OBSTACLE_SCORE_STEP)
+        blocked = self._blocked_keys(blocked_positions)
         while len(self.obstacles) < target_count:
-            current_positions = blocked_positions + [ob.position() for ob in self.obstacles]
-            self._spawn_obstacle(current_positions)
+            self._spawn_obstacle(blocked)

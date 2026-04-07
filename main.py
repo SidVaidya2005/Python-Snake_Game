@@ -181,7 +181,7 @@ class SnakeGame:
         if hit_wall:
             self._lose_life()
             return
-        if abs(next_x - x) > GRID_SIZE or abs(next_y - y) > GRID_SIZE:
+        if self._did_wrap(x, y, next_x, next_y):
             self.snake.set_head_position(next_x, next_y)
 
         # Tail collision
@@ -201,6 +201,11 @@ class SnakeGame:
         speed_display = round(1.0 / delay, 1) if delay > 0 else 0.0
         combo = normalize_combo(self.combo_streak)
         self.scoreboard.set_runtime(level, speed_display, self.lives, combo)
+
+    @staticmethod
+    def _did_wrap(previous_x, previous_y, next_x, next_y):
+        # Wrapping teleports across the board and therefore exceeds one grid step.
+        return abs(next_x - previous_x) > GRID_SIZE or abs(next_y - previous_y) > GRID_SIZE
 
     def run(self):
         while self.state != GameState.EXIT:
