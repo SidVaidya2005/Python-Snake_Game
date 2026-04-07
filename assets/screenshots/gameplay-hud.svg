@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#000"/>
+  <rect x="20" y="20" width="560" height="560" fill="none" stroke="#3a3a3a"/>
+  <rect x="20" y="0" width="560" height="20" fill="#0f0f0f"/>
+  <text x="25" y="14" font-family="monospace" font-size="12" fill="#fff">Score: 18  High: 64  Level: 4  Speed: 11.3  Lives: 3  Diff: normal  Mode: wrap  Combo: x2</text>
+
+  <rect x="260" y="300" width="20" height="20" fill="#44ff44"/>
+  <rect x="240" y="300" width="20" height="20" fill="#33dd33"/>
+  <rect x="220" y="300" width="20" height="20" fill="#22bb22"/>
+  <rect x="200" y="300" width="20" height="20" fill="#22aa22"/>
+  <rect x="200" y="320" width="20" height="20" fill="#229922"/>
+
+  <circle cx="360" cy="240" r="9" fill="#ff5252"/>
+  <circle cx="120" cy="460" r="9" fill="#ffd54f"/>
+  <circle cx="470" cy="120" r="9" fill="#64b5f6"/>
+
+  <rect x="80" y="80" width="20" height="20" fill="#888"/>
+  <rect x="100" y="80" width="20" height="20" fill="#888"/>
+  <rect x="460" y="420" width="20" height="20" fill="#888"/>
+  <rect x="460" y="440" width="20" height="20" fill="#888"/>
+  <rect x="280" y="500" width="20" height="20" fill="#888"/>
+
+  <text x="300" y="575" font-family="monospace" font-size="14" fill="#aaa" text-anchor="middle">Active gameplay: HUD, obstacles, and special food types visible</text>
+</svg>
