@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#000"/>
+  <text x="300" y="80" font-family="monospace" font-size="34" fill="#fff" text-anchor="middle">Snake Game</text>
+  <text x="300" y="125" font-family="monospace" font-size="16" fill="#8f8" text-anchor="middle">START MENU</text>
+  <rect x="70" y="170" width="460" height="320" rx="8" ry="8" fill="#0b0b0b" stroke="#2c2c2c"/>
+  <text x="100" y="220" font-family="monospace" font-size="18" fill="#fff">1 - Slow</text>
+  <text x="100" y="255" font-family="monospace" font-size="18" fill="#fff">2 - Normal (selected)</text>
+  <text x="100" y="290" font-family="monospace" font-size="18" fill="#fff">3 - Fast</text>
+  <text x="100" y="325" font-family="monospace" font-size="18" fill="#fff">M - Boundary mode: wall</text>
+  <text x="100" y="360" font-family="monospace" font-size="18" fill="#fff">Enter - Start game</text>
+  <text x="100" y="395" font-family="monospace" font-size="18" fill="#fff">Q - Quit</text>
+  <rect x="90" y="440" width="420" height="36" fill="#111" stroke="#3a3a3a"/>
+  <text x="300" y="464" font-family="monospace" font-size="16" fill="#8ad" text-anchor="middle">Difficulty: normal | Mode: wall</text>
+</svg>

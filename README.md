@@ -2,6 +2,26 @@
 
 A classic Snake game built with Python `turtle`, now extended with game states, difficulty settings, wrap/wall modes, HUD improvements, obstacles, combo scoring, and safer high-score persistence.
 
+## Screenshots
+
+### Start menu
+
+![Start menu state](assets/screenshots/start-menu.svg)
+
+### Gameplay (HUD + special food + obstacles)
+
+![Gameplay with HUD and obstacles](assets/screenshots/gameplay-hud.svg)
+
+### Paused state
+
+![Paused state](assets/screenshots/paused-state.svg)
+
+### Game-over state
+
+![Game over state](assets/screenshots/game-over-state.svg)
+
+> Screenshot maintenance: refresh these images whenever HUD text, controls, color scheme, or game-state overlays change.
+
 ## Requirements
 
 - Python 3.10+
